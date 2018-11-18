@@ -10,8 +10,6 @@ const command = argv._[0]
 
 if (command === 'help' || argv.help) {
   help()
-} else if (['search'].indexOf(command) === -1) {
-  help()
 } else if (command === 'version' || argv.version) {
   version()
 } else if (command === 'search') {
@@ -23,12 +21,14 @@ if (command === 'help' || argv.help) {
     const date = argv._[3]
     search(origin, destination, date)
   }
+} else {
+  help()
 }
 
 function version () {
   console.log(
     require('../package.json').version +
-    ' (' + require('fly/package.json').version + ')'
+    ' (' + require('@danielmoraes/fly/package.json').version + ')'
   )
 }
 
