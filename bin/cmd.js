@@ -46,6 +46,10 @@ Commands:
 }
 
 async function search (origin, destination, date) {
-  const lowestFares = await findLowestFares(origin, destination, date)
-  console.log(lowestFares)
+  try {
+    const lowestFares = await findLowestFares(origin, destination, date)
+    console.log(lowestFares)
+  } catch (e) {
+    console.log(e.message)
+  }
 }
