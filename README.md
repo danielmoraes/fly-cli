@@ -10,12 +10,14 @@
 <h4 align="center">Airfare search engine for the command line.</h4>
 
 <p align="center">
-  <a href="https://www.npmjs.com/package/@danielmoraes/fly-cli"><img src="https://img.shields.io/npm/v/@danielmoraes/fly.svg" alt="npm version"></a>
-  <a href="https://www.npmjs.com/package/@danielmoraes/fly-cli"><img src="https://img.shields.io/npm/dm/@danielmoraes/fly.svg" alt="npm downloads"></a>
+  <a href="https://www.npmjs.com/package/@danielmoraes/fly-cli"><img src="https://img.shields.io/npm/v/@danielmoraes/fly-cli.svg" alt="npm version"></a>
+  <a href="https://www.npmjs.com/package/@danielmoraes/fly-cli"><img src="https://img.shields.io/npm/dm/@danielmoraes/fly-cli.svg" alt="npm downloads"></a>
   <a href="https://standardjs.com"><img src="https://img.shields.io/badge/code_style-standard-brightgreen.svg" alt="Standard - JavaScript Style Guide"></a>
 </p>
 
 <br>
+
+To use Fly from Node.js, see [fly](https://github.com/danielmoraes/fly).
 
 ### Install
 
