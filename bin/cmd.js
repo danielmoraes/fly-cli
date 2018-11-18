@@ -4,7 +4,14 @@
 const minimist = require('minimist')
 const { findLowestFares } = require('@danielmoraes/fly')
 
-const argv = minimist(process.argv.slice(2))
+const argv = minimist(process.argv.slice(2), {
+  alias: {
+    'j': 'json'
+  },
+  boolean: [
+    'json'
+  ]
+})
 
 const command = argv._[0]
 
@@ -37,10 +44,15 @@ function help () {
   /*
 Usage:
     fly-cli [command] <options>
+
 Example:
     fly-cli search sao rio 2019-01-01
+
 Commands:
     search <origin> <destination> <date>  Find the lowest fares by source
+
+Options:
+    -j, --json                    output data on json format
   */
   }.toString().split(/\n/).slice(2, -2).join('\n'))
 }
@@ -48,7 +60,10 @@ Commands:
 async function search (origin, destination, date) {
   try {
     const lowestFares = await findLowestFares(origin, destination, date)
-    console.log(lowestFares)
+    const output = argv.json
+      ? JSON.stringify(lowestFares)
+      : lowestFares
+    console.log(output)
   } catch (e) {
     console.log(e.message)
   }
