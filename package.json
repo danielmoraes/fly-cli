@@ -16,6 +16,7 @@
     "url": "https://github.com/danielmoraes/fly-cli/issues"
   },
   "dependencies": {
+    "@danielmoraes/fly": "0.x",
     "minimist": "^1.2.0"
   }
 }
