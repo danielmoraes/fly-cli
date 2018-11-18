@@ -21,8 +21,7 @@ To use Fly from Node.js, see [fly](https://github.com/danielmoraes/fly).
 
 ### Install
 
-To install a `fly-cli`
-[command line app](https://github.com/danielmoraes/fly-cli), run:
+To install a `fly-cli` command line app, run:
 
 ```bash
 npm install @danielmoraes/fly-cli -g
