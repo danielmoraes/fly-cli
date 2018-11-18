@@ -1,0 +1,21 @@
+{
+  "name": "fly-cli",
+  "version": "0.0.1",
+  "description": "Airfare seach engine for the command line.",
+  "main": "index.js",
+  "repository": "https://github.com/danielmoraes/fly",
+  "author": "Daniel Moraes",
+  "license": "MIT",
+  "engines": {
+    "node": ">=8"
+  },
+  "bin": {
+    "fly-cli": "./bin/cmd.js"
+  },
+  "bugs": {
+    "url": "https://github.com/danielmoraes/fly-cli/issues"
+  },
+  "dependencies": {
+    "minimist": "^1.2.0"
+  }
+}
