@@ -1,5 +1,5 @@
 {
-  "name": "fly-cli",
+  "name": "@danielmoraes/fly-cli",
   "version": "0.0.1",
   "description": "Airfare seach engine for the command line.",
   "main": "index.js",
