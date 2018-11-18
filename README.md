@@ -32,9 +32,9 @@ npm install @danielmoraes/fly-cli -g
 ```bash
 $ fly-cli
 Usage:
-    fly [command] <options>
+    fly-cli [command] <options>
 Example:
-    fly search sao rio 2019-01-01
+    fly-cli search sao rio 2019-01-01
 Commands:
     search <origin> <destination> <date>  Find the lowest fares by source
 ```
