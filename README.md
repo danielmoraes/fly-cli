@@ -28,7 +28,27 @@ npm install @danielmoraes/fly-cli -g
 
 ### Usage
 
-TODO.
+```bash
+$ fly-cli
+Usage:
+    fly [command] <options>
+Example:
+    fly search sao rio 2019-01-01
+Commands:
+    search <origin> <destination> <date>  Find the lowest fares by source
+```
+
+To make a query:
+
+```bash
+$ fly-cli search sao rio 2019-01-01
+{ sources:
+   [ { sourceName: 'Avianca', lowestFare: 169 },
+     { sourceName: 'Azul', lowestFare: 187.1 },
+     { sourceName: 'Gol', lowestFare: 175.17 },
+     { sourceName: 'Latam', lowestFare: 195.84 } ],
+  lowestFare: 169 }
+```
 
 ### License
 

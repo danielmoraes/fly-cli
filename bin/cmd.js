@@ -40,7 +40,7 @@ Usage:
 Example:
     fly search sao rio 2019-01-01
 Commands:
-    search <origin> <destination> <date>  Find the lowest fare for the specified trip
+    search <origin> <destination> <date>  Find the lowest fares by source
   */
   }.toString().split(/\n/).slice(2, -2).join('\n'))
 }

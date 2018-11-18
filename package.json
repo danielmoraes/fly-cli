@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "description": "Airfare seach engine for the command line.",
   "main": "index.js",
-  "repository": "https://github.com/danielmoraes/fly",
+  "repository": "https://github.com/danielmoraes/fly-cli",
   "author": "Daniel Moraes",
   "license": "MIT",
   "engines": {
